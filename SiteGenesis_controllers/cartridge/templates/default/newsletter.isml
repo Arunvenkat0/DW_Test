@@ -1,0 +1,19 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<isinclude template="util/modules"/>
+
+<form action="${URLUtils.httpsContinue()}" method="post" class="form-horizontal" id="RegistrationForm">
+
+
+					<isinputfield formfield="${pdict.CurrentForms.newsletter.email}" type="input"/>
+					
+				  	<isinputfield formfield="${{pdict.CurrentForms.newsletter.fname}" type ="input" />
+				  	
+				  	<isinputfield formfield="${{pdict.CurrentForms.newsletter.lname}" type ="input" />
+				  	
+				  	<div >
+						<button id="sendBtn" type="submit" name="${pdict.CurrentForms.newsletter.subscribe.htmlName}">
+							${Resource.msg('forms.send','locale',null)}
+						</button>
+					</div>
+					
+</form>

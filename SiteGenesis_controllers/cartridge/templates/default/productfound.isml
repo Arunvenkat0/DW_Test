@@ -1,0 +1,12 @@
+
+<isdecorate template="product/pt_productdetails"> 
+
+   Test: <isprint value="${pdict.myProduct.name}" />
+   
+   <isset name="product" value="${pdict.myProduct}" scope="pdict"/>
+    
+  <iscomment>  <isinclude template="product/producttile"/>    </iscomment>
+
+<isinclude url="${URLUtils.url('Product-IncludeLastVisited') }"/> 
+
+</isdecorate>

@@ -1,0 +1,12 @@
+
+
+<head>
+
+
+</head>
+
+<body>
+   Test: <isprint value="${pdict.message}" />
+
+
+</body>

@@ -1,0 +1,13 @@
+
+
+
+<head>
+
+Test Controller
+
+</head>
+
+<body>
+ Test : <isprint value="${pdict.myParam}" />
+   
+</body>

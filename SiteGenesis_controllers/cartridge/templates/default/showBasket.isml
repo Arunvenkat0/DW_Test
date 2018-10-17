@@ -1,0 +1,38 @@
+<isinclude template="util/modules"/>
+
+<iscontent type="text/javascript" charset="UTF-8" compact="true"/>
+ 
+ <isscript>
+var productLineItems = pdict.basket.getProductLineItems();
+	
+	var array = new Array();
+	
+	
+				for (i=0; i< productLineItems.getLength(); i++){
+					var jsonData = new Object();
+				var productLineItem = productLineItems[i];
+				jsonData.name = productLineItem.getProductName(); 
+				jsonData.ID= productLineItem.getProductID();	
+				array[i] = jsonData;
+				}
+		
+</isscript>
+	
+	
+	<br/>
+			
+<isloop items="${array}" var="productLineItem" status="loopcounter">
+			${JSON.stringify(productLineItem)}
+			<br/>
+			
+</isloop> 
+
+<isloop items="${pdict.basket.getProductLineItems()}" var="productLineItem" status="loopcounter">
+			
+			<isprint value="${productLineItem.getProductName()}"/> </br>
+			<isprint value="${productLineItem.getAdjustedNetPrice()}"/> </br>
+			
+</isloop>
+
+
+

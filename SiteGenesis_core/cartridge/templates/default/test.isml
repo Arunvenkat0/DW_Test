@@ -1,0 +1,8 @@
+hello priyanka
+<isset name="sessionVar" value="${123}" scope = "request"/> 
+${request.custom.sessionVar}<br/> 
+<isset name="var" value="234" scope= "page"/>
+
+<isloop iterator = "${12}" alias= "var" status = "count" begin = "1"  end = "5" step = "3">
+<isprint value="${var}"
+</isloop> 

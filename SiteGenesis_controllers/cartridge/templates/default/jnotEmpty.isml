@@ -1,0 +1,10 @@
+<head>
+
+Test Controller
+
+</head>
+
+<body>
+Got the parameter : <isprint value="${pdict.product}" />
+   
+</body>
